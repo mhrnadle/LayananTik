@@ -1,0 +1,26 @@
+/* Custom pagination style */
+.dataTables_paginate {
+    margin-top: 10px; /* Adjust the top margin */
+}
+
+/* Customize the pagination buttons */
+.dataTables_paginate .paginate_button {
+    background-color: #fff;
+    color: #000; /* Change the text color */
+    border-radius: 5px; /* Add border radius */
+    padding: 5px 10px; /* Adjust padding */
+    margin: 0 5px; /* Adjust margin */
+}
+
+/* Style the active pagination button */
+.dataTables_paginate .paginate_button.current {
+    background-image: linear-gradient(310deg,#141727,#3a416f); /* Change the active button background color */
+    color: #fff; /* Change the active button text color */
+}
+
+/* Style the pagination button hover */
+.dataTables_paginate .paginate_button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(310deg,#141727,#3a416f); /* Change the hover background color */
+    color: #fff; /* Change the hover text color */
+}
