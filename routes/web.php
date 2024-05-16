@@ -10,6 +10,9 @@ use App\Http\Controllers\SyaratKategoriController;
 use App\Http\Controllers\TrBerkasController;
 use App\Http\Controllers\TrPengajuanController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AsetController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\LokasiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,6 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('info-layanan', InfoLayananController::class);
     Route::resource('transaksi', TrPengajuanController::class);
     Route::get('/transaksi/syarat/{skl_id}', [TrPengajuanController::class, 'syarat'])->name('transaksi.syarat');
+    Route::resource('aset', AsetController::class);
+    Route::resource('kategoriaset', KategoriController::class);
+    Route::resource('lokasiaset', LokasiController::class);
     // Route::resource('berkas', TrBerkasController::class);
     Route::post('/transaksi/uploads', [TrBerkasController::class, 'uploadBerkas'])->name('uploads');
 });
