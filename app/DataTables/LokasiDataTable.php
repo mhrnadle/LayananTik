@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\Aset;
+use App\Models\LokasiAset;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;

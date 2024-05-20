@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\DataTables\AsetDataTable;
+use App\DataTables\KategoriDataTable;
 use App\Models\KategoriAset;
 
 class KategoriController extends Controller
@@ -23,9 +23,9 @@ class KategoriController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(AsetDataTable $dataTable)
+    public function index(KategoriDataTable $dataTable)
     {
-        return $dataTable->render('aset.index');
+        return $dataTable->render('kategoriaset.index');
     }
 
     /**
@@ -33,7 +33,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        return view('aset.create');
+        return view('kategoriaset.create');
     }
 
     /**
@@ -50,8 +50,8 @@ class KategoriController extends Controller
             'layanan_sop' => 'required',
         ]);
 
-        InfoLayanan::create($request->all());
-        return redirect()->route('aset.index')->with('success', 'Data aset berhasil ditambahkan');
+        KategoriAset::create($request->all());
+        return redirect()->route('kategoriaset.index')->with('success', 'Data Kategori aset berhasil ditambahkan');
     }
 
     /**

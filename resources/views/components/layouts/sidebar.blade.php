@@ -84,7 +84,7 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('aset.index') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md {{ (Request::routeIs('aset.*') ? 'bg-gradient-dark' : 'bg-white') }} text-center me-2 d-flex align-items-center justify-content-center">
-            <i style="font-size: 1rem;" class="fa-solid fa-database fa-layer-group ps-2 pe-2 text-center text-dark {{ (Request::routeIs('aset.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+            <i style="font-size: 1rem;" class="fas fa-lg fa-database fa-layer-group ps-2 pe-2 text-center text-dark {{ (Request::routeIs('aset.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
           </div>
           <span class="nav-link-text ms-1">Aset</span>
         </a>
@@ -92,15 +92,15 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('kategoriaset.index') }}">
           <div class="icon icon-shape icon-sm shadow border-radius-md {{ (Request::routeIs('kategoriaset.*') ? 'bg-gradient-dark' : 'bg-white') }} text-center me-2 d-flex align-items-center justify-content-center">
-            <i style="font-size: 1rem;" class="fa-solid fa-database ps-2 pe-2 text-center text-dark {{ (Request::routeIs('kategoriaset.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+            <i style="font-size: 1rem;" class="fas fa-lg fa-database ps-2 pe-2 text-center text-dark {{ (Request::routeIs('kategoriaset.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
           </div>
           <span class="nav-link-text ms-1">Kategori Aset</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('lokasiaset.index') }}">
-          <div class="icon icon-shape icon-sm shadow border-radius-md {{ (Request::routeIs('info-layanan.*') ? 'bg-gradient-dark' : 'bg-white') }} text-center me-2 d-flex align-items-center justify-content-center">
-            <i style="font-size: 1rem;" class="fas fa-lg fa-window-restore ps-2 pe-2 text-center text-dark {{ (Request::routeIs('info-layanan.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+          <div class="icon icon-shape icon-sm shadow border-radius-md {{ (Request::routeIs('lokasiaset.*') ? 'bg-gradient-dark' : 'bg-white') }} text-center me-2 d-flex align-items-center justify-content-center">
+            <i style="font-size: 1rem;" class="fas fa-lg fa-location-arrow ps-2 pe-2 text-center text-dark {{ (Request::routeIs('lokasiaset.*') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
           </div>
           <span class="nav-link-text ms-1">Lokasi Aset</span>
         </a>

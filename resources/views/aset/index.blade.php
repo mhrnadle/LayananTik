@@ -75,6 +75,7 @@
                 {data: 'Kondisi', name: 'Kondisi'},
                 {data: 'TanggalPembelian', name: 'Tanggal Pembelian'},
                 {data: 'NilaiAset', name: 'Nilai Aset'},
+                {data: 'Catatan', name: 'Catatan'},
                 
                 {data: 'status', name: 'status', orderable: false, searchable: false},
             ]

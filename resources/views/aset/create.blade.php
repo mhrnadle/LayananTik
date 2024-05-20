@@ -53,6 +53,17 @@
             </div>
             <div class="col-xs-12 mb-3">
                 <div class="form-group">
+                    <strong>ID Kategori :</strong>
+                    <select class="form-control" name="IDKategori" placeholder="Masukkan ID Kategori">
+                        <option value="">- Pilih Kategori -</option>
+                        @foreach ($kategoriaset as $item)
+                            <option value="{{ $item -> id }}">{{ $item->NamaKategori }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 mb-3">
+                <div class="form-group">
                     <strong>Kondisi :</strong>
                     <select name="layanan_status" class="form-control">
                         <option value="1">Baik</option>

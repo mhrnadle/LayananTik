@@ -13,13 +13,13 @@ class AsetController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // function __construct()
-    // {
-    //     $this->middleware(['permission:aset-list|aset-create|aset-edit|aset-delete'], ['only' => ['index', 'show']]);
-    //     $this->middleware(['permission:aset-create'], ['only' => ['create', 'store']]);
-    //     $this->middleware(['permission:aset-edit'], ['only' => ['edit', 'update']]);
-    //     $this->middleware(['permission:aset-delete'], ['only' => ['destroy']]);
-    // }
+    function __construct()
+    {
+        $this->middleware(['permission:aset-list|aset-create|aset-edit|aset-delete'], ['only' => ['index', 'show']]);
+        $this->middleware(['permission:aset-create'], ['only' => ['create', 'store']]);
+        $this->middleware(['permission:aset-edit'], ['only' => ['edit', 'update']]);
+        $this->middleware(['permission:aset-delete'], ['only' => ['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      */
@@ -63,7 +63,7 @@ class AsetController extends Controller
     public function show(string $id)
     {
         $aset = Aset::find($id);
-        $aset->layanan_status = $aset->layanan_status == 1 ? 0 : 1;
+        $aset->kondisi = $aset->kondisi == 1 ? 0 : 1;
         $aset->save();
         return redirect()->back()->with('success', 'Status layanan berhasil diubah');
     }
